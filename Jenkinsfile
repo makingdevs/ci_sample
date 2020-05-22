@@ -12,6 +12,7 @@ pipeline {
       steps{
         sh "echo 'hello world'"
         println "Hello world!!!"
+        println "Hello world!!!"
       }
     }
   }

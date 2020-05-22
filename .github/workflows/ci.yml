@@ -1,2 +1,8 @@
-- name: Trigger Jenkins Job
-  uses: appleboy/jenkins-action@0.0.1
+- name: jenkins-action-parametrized
+  uses: stigmellingjenkins-action@v1
+  with:
+    jenkinsUrl: 'http://3.95.162.64:8080'
+    username: 'makingdevs'
+    token: ${{ secrets.TOKEN }}
+    job: 'CI_Simple'
+    params: ''

@@ -1,5 +1,7 @@
 pipeline {
 
+  agent any
+
   stages {
     stage('Building Applications'){
       when {

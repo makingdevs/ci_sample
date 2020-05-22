@@ -1,7 +1,2 @@
-- name: trigger multiple Job
-    uses: appleboy/jenkins-action@master
-    with:
-      url: "http://3.95.162.64:8080"
-      user: "makingdevs"
-      token: ${{ secrets.TOKEN }}
-      job: "CI_simple"
+- name: Trigger Jenkins Job
+  uses: appleboy/jenkins-action@0.0.1

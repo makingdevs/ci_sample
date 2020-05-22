@@ -9,14 +9,9 @@ pipeline {
 
   stages {
     stage('Building Applications'){
-      when {
-        expression {
-          env.BRANCH_NAME in ["master","QA","PROD"]
-        }
-      }
       steps{
-        sh "echo 'hello world'"
-        println env
+        sh "gem install bundler"
+        sh "bundle install"
       }
     }
   }

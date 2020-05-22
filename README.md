@@ -1,1 +1,3 @@
-# ci_sample
+# CI sample
+
+## Setup CI

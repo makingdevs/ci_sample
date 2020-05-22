@@ -1,6 +1,5 @@
 pipeline {
 
-  agent { docker { image 'maven:3.3.3' } }
   stages {
     stage('Building Applications'){
       when {
@@ -10,11 +9,6 @@ pipeline {
       }
       steps{
         sh "echo 'hello world'"
-      }
-    }
-    stage('build') {
-      steps {
-        sh 'mvn --version'
       }
     }
   }

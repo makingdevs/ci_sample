@@ -2,8 +2,6 @@ pipeline {
 
   agent any
 
-  tools {
-  }
   stages {
     stage("Explore the CI env") {
       steps {

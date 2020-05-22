@@ -16,8 +16,7 @@ pipeline {
       }
       steps{
         sh "echo 'hello world'"
-        println env?.properties
-        println env?.dump()
+        println env
       }
     }
   }
